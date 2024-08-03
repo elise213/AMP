@@ -99,7 +99,7 @@ const page = () => {
             Absolutely, we are open to applications from individuals outside the
             U.S. However, be aware that certain tax limitations might be
             applicable. For more detailed information, please contact us at
-            cinematicandexperimentalarts@gmail.com.
+            info@ccearts.org.
           </p>
 
           <p className="question">
