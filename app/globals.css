@@ -40,9 +40,9 @@
   align-items: flex-end;
   min-height: auto; */
   width: 100%;
-  display: block; /* Change from 'flex' to 'block' to let it expand naturally */
+  display: flex;
   overflow: hidden; /* Keep this to prevent overflow */
-  min-height: auto; /* Ensure the minimum height adjusts based on content */
+  min-height: 400px; /* Ensure the minimum height adjusts based on content */
 }
 
 .navbar-logo {
@@ -103,6 +103,7 @@ label {
   flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
+  justify-content: space-between;
 }
 
 .home-body::-webkit-scrollbar-track {
