@@ -12,7 +12,7 @@ function RootLayout({ children }) {
   return (
     <html>
       <head>
-        <meta property="og:title" content="CCEA" />
+        <meta property="og:title" content="Austin Multimedia Productions" />
         <meta
           property="og:description"
           content="Austin Multimedia Productions"
@@ -20,7 +20,7 @@ function RootLayout({ children }) {
         <meta
           property="og:image"
           // content="https://ccearts.org/img/CCEA99.png"
-          content="http://amp-three-nu.vercel.app/img/AMP-mask.png"
+          content="/img/AMP-mask.png"
         />
       </head>
       <body className={inter.className}>
