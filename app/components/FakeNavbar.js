@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext, useEffect } from "react";
-import { Context } from "../../../AMP/app/context/appContext";
+import { Context } from "../context/appContext";
 import Link from "next/link";
 import styles from "../styles/navbar.css";
 
