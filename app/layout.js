@@ -3,7 +3,6 @@ import React from "react";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import injectContext from "./context/appContext";
 const inter = Inter({ subsets: ["latin"] });
 import "font-awesome/css/font-awesome.min.css";
@@ -16,11 +15,12 @@ function RootLayout({ children }) {
         <meta property="og:title" content="CCEA" />
         <meta
           property="og:description"
-          content="The Center For Cinematic and Experimental Arts"
+          content="Austin Multimedia Productions"
         />
         <meta
           property="og:image"
-          content="https://ccearts.org/img/CCEA99.png"
+          // content="https://ccearts.org/img/CCEA99.png"
+          content="http://amp-three-nu.vercel.app/img/AMP-mask.png"
         />
       </head>
       <body className={inter.className}>
