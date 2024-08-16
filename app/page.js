@@ -4,16 +4,12 @@ import { Context } from "./context/appContext";
 import Video from "./components/Video";
 import styles from "./globals.css";
 import Image from "next/image";
-import MovieCard from "./components/MovieCard";
 import Link from "next/link";
 import FakeNavBar from "./components/FakeNavbar";
-import { auto } from "@popperjs/core";
 import Footer from "./components/Footer";
 
 const Home = () => {
   const { store, actions } = useContext(Context);
-  const scrollRef = useRef();
-  const [isOverflowing, setIsOverflowing] = useState(false);
 
   useEffect(() => {
     const body = document.body;
@@ -34,19 +30,6 @@ const Home = () => {
       }
     }
   }, [store.isNavOpen, store.showContactModal]);
-
-  const checkOverflow = () => {
-    if (!scrollRef.current) return;
-
-    const container = scrollRef.current;
-    const isOver = container.scrollWidth > container.offsetWidth;
-    setIsOverflowing(isOver);
-  };
-
-  const getActiveEvent = () => {
-    const { store } = useContext(Context);
-    return store.events.find((event) => event.id === store.activeEventId);
-  };
 
   useEffect(() => {
     if (store.modalIsOpen) {
