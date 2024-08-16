@@ -17,11 +17,7 @@ function RootLayout({ children }) {
           property="og:description"
           content="Austin Multimedia Productions"
         />
-        <meta
-          property="og:image"
-          // content="https://ccearts.org/img/CCEA99.png"
-          content="/img/AMP-mask.png"
-        />
+        <meta property="og:image" content="/img/AMP-mask.png" />
       </head>
       <body className={inter.className}>
         <div className="wrapper">
