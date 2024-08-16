@@ -74,7 +74,6 @@ const Contact = () => {
             ></textarea>
           </div>
         </div>
-        {/* <img src="/img/CCEA99.png" alt="CCEA Logo" className="contact-logo" /> */}
         <div className="form-col-full">
           <button className="send-button" type="submit">
             Send

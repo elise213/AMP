@@ -11,9 +11,18 @@ const About = () => {
         <FakeNavBar />
         <div className="about-div">
           <span className="">
-            The Center for Cinematic and Experimental Arts is a nonprofit
-            501(c)3 offering workshops and screenings for the public and
-            fiscal-sponsorships for independent artists.
+            Austin Multimedia Productions is a production company based in
+            AUSTIN, TEXAS specializing in videography and photography services
+            to help you market and manage your business. We work closely with
+            our clients throughout the creative process to ensure we meet your
+            expectations.
+            <ul>
+              <li>Video Production</li>
+              <li>Digital and Film Photography</li>
+              <li> Color Grading </li>
+              <li>Music Composition</li>
+              <li>Multicam Live Event Coverage</li>
+            </ul>
           </span>
         </div>
         <Footer />

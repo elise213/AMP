@@ -11,8 +11,8 @@
   min-height: 300px;
   width: 90% !important;
 
-  -webkit-mask-image: url("../../public/img/CCEA.png");
-  mask-image: url("../../public/img/CCEA.png");
+  -webkit-mask-image: url("../../public/img/AMP-mask.png");
+  mask-image: url("../../public/img/AMP-mask.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;

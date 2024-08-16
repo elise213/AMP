@@ -1,7 +1,8 @@
 "use client";
 import React, { useContext, useEffect } from "react";
-import { Context } from "../context/appContext";
+import { Context } from "../../../AMP/app/context/appContext";
 import Link from "next/link";
+import styles from "../styles/navbar.css";
 
 const FakeNavbar = () => {
   const { store, actions } = useContext(Context);
@@ -14,7 +15,8 @@ const FakeNavbar = () => {
           passHref
           style={{ display: "flex", justifyContent: "flex-end", width: "100%" }}
         >
-          <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" />
+          <span className="amp">AMP</span>
+          {/* <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" /> */}
         </Link>
       </div>
     </>

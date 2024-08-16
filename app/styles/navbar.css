@@ -19,6 +19,20 @@
   justify-content: center;
 }
 
+.amp {
+  /* text-decoration: none !important; */
+  font-size: 60px;
+  /* font-family: "Urbanist", sans-serif; */
+  font-weight: 400;
+  color: black;
+  transition: 0.2s;
+  margin-right: 10px;
+}
+
+.amp:hover {
+  color: gray !important;
+}
+
 .new-navbar.open {
   left: 0;
 }

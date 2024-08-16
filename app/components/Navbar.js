@@ -64,19 +64,18 @@ const Navbar = () => {
               actions.setIsNavOpen(false);
             }}
           >
-            <Link href="/about" passHref>
-              ABOUT
+            <Link href="/services" passHref>
+              SERVICES
             </Link>
           </span>
-
           <span
             className="nav-item"
             onClick={() => {
               actions.setIsNavOpen(false);
             }}
           >
-            <Link href="/fiscal-sponsorship" passHref>
-              FISCAL SPONSORSHIP
+            <Link href="/about" passHref>
+              ABOUT
             </Link>
           </span>
           <span
@@ -89,8 +88,6 @@ const Navbar = () => {
               CONTACT
             </Link>
           </span>
-
-          {/* <EmailList /> */}
         </div>
       </nav>
     </>

@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: auto;
 }
 
 footer {
@@ -147,9 +148,9 @@ footer {
     min-height: 100vh; /* Ensure the wrapper covers the full viewport height */
   }
 
-  .content {
-    flex: 1; /* Allow content to grow and push the footer down */
-  }
+  /* .content {
+    flex: 1;
+  } */
 
   .footer-div-1 {
     flex-direction: column !important;

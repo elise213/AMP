@@ -68,99 +68,20 @@ const Home = () => {
     }
   }, [store.isNavOpen, store.showContactModal]);
 
-  useEffect(() => {
-    checkOverflow();
-    const handleResize = () => {
-      actions.updateScreenSize();
-      checkOverflow();
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <>
       <div className={`${styles.main} home-body content`}>
         <FakeNavBar />
-        <svg width="0" height="0">
-          <defs>
-            <clipPath id="clip-shape" clipPathUnits="objectBoundingBox">
-              <path d="M 0,0 L 1,0 L 1,1 Q 0.5,1 0,1 Z" />
-            </clipPath>
-          </defs>
-        </svg>
-        <Video />
-        <div
-          ref={scrollRef}
-          className="scroll-search-results"
-          style={{
-            justifyContent: isOverflowing ? "flex-start" : "center",
-          }}
-        >
-          <ul>
-            <li>
-              <Link href="/retreat" passHref>
-                <Image
-                  height={500}
-                  width={500}
-                  quality={80}
-                  className="retreat-li"
-                  src={"/img/CCEARETREATSMALLER.png"}
-                  alt=""
-                ></Image>
-              </Link>
-            </li>
-            {store.events.map((result, i) => {
-              // console.log(result);
-              return (
-                <li
-                  key={i}
-                  style={
-                    i === store.events.length - 1 ? { paddingRight: "" } : {}
-                  }
-                >
-                  <div
-                    className="event-container"
-                    onClick={() => actions.toggleModal(result.id)}
-                  >
-                    <Image
-                      width={220}
-                      height={320}
-                      quality={90}
-                      className="movie"
-                      src={result.image}
-                      alt=""
-                    />
-                    <div className="highlights">
-                      {!store.modalIsOpen && (
-                        <>
-                          {result.title && (
-                            <p className="highlight-title">{result.title}</p>
-                          )}
-                          {result.bullet && (
-                            <p className="highlight">{result.bullet}</p>
-                          )}
-                          {result.bullet2 && (
-                            <p className="highlight">{result.bullet2}</p>
-                          )}
-                          {result.bullet3 && (
-                            <p className="highlight">{result.bullet3}</p>
-                          )}
-                        </>
-                      )}
-                    </div>
-                    {store.modalIsOpen && store.activeEventId === result.id && (
-                      <>
-                        <div className="modal-overlay"></div>
-                        <MovieCard result={getActiveEvent()} />
-                      </>
-                    )}
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
+        <div className="home-page-container">
+          <Image
+            height={100}
+            width={100}
+            layout="responsive"
+            quality={100}
+            className="amp-1"
+            src="/img/amp1.png"
+            alt=""
+          ></Image>
         </div>
         <Footer />
       </div>
