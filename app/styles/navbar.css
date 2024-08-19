@@ -20,9 +20,7 @@
 }
 
 .amp {
-  /* text-decoration: none !important; */
-  font-size: 60px;
-  /* font-family: "Urbanist", sans-serif; */
+  font-size: 50px;
   font-weight: 400;
   color: black;
   transition: 0.2s;

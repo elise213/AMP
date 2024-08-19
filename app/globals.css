@@ -10,9 +10,40 @@
   --color5: rgb(183, 227, 168);
 } */
 
-.amp-1 {
+.amp-1,
+.flower-face {
   margin: 0;
   height: auto !important;
+  width: 45% !important;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.image-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 60px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.description ul {
+  margin-top: 0;
 }
 
 .fake-navbar {
@@ -32,17 +63,13 @@
 }
 
 .home-page-container {
-  /* width: 100%;
-  height: 100%;
-  max-width: 1500px;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  min-height: auto; */
+  max-width: 800px;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   display: flex;
-  overflow: hidden; /* Keep this to prevent overflow */
-  min-height: 400px; /* Ensure the minimum height adjusts based on content */
+  overflow: hidden;
+  min-height: 400px;
 }
 
 .navbar-logo {
@@ -63,7 +90,7 @@ body {
   align-items: center;
   width: 100%;
   overflow: hidden !important;
-  height: 100%;
+  height: 100vh;
   padding: 0px;
   margin: 0px;
   background-color: #fffdf3;
@@ -96,14 +123,19 @@ label {
   color: black;
 }
 
+.content {
+  overflow-y: auto;
+}
+
 .home-body {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
   justify-content: space-between;
+  align-items: center;
 }
 
 .home-body::-webkit-scrollbar-track {
