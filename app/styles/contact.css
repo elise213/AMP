@@ -1,5 +1,5 @@
 .contact-page {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -78,14 +78,15 @@
 }
 
 .contact-form {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 20px 25px 20px 10px;
+  padding: 20px;
   position: relative;
   height: 100%;
   max-width: 700px;
-  min-height: 400px;
+  min-height: 300px;
 }
 
 .message {

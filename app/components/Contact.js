@@ -14,7 +14,6 @@ const Contact = () => {
   const TEMPLATE_ID = "template_99iigjc";
   const PUBLIC_KEY = "bSrh0TD_khQU1Jash";
 
-  // Function to send an email
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
@@ -37,13 +36,13 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      <FakeNavbar />
+      {/* <FakeNavbar /> */}
       <form ref={form} onSubmit={sendEmail} className="contact-form">
-        <div className="contact-call">
+        {/* <div className="contact-call">
           <span className="close-contact" onClick={actions.toggleContactModal}>
             <i className="fa-solid fa-x"></i>
           </span>
-        </div>
+        </div> */}
         <div className="contact-form-div">
           <div className="form-col">
             <input

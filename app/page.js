@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import FakeNavBar from "./components/FakeNavbar";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 const Home = () => {
   const { store, actions } = useContext(Context);
@@ -102,17 +103,7 @@ const Home = () => {
             editing, color grading, podcast productions, and A/V systems
             installation.
           </span>
-          {/* <div className="image-container">
-            <Image
-              height={100}
-              width={100}
-              layout="responsive"
-              quality={100}
-              className="flower-face"
-              src="/img/flower-face.jpg"
-              alt=""
-            ></Image>
-          </div> */}
+          <Contact />
           <div className="image-container">
             <Image
               height={100}
